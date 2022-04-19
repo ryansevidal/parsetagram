@@ -22,6 +22,8 @@
 		9749D235280D1F3E007C9A9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9749D234280D1F3E007C9A9D /* GoogleService-Info.plist */; };
 		9749D237280D24AA007C9A9D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9749D236280D24AA007C9A9D /* CameraViewController.swift */; };
 		9749D239280D3420007C9A9D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9749D238280D3420007C9A9D /* PostCell.swift */; };
+		978FDE63280E266700AA8E33 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FDE62280E266700AA8E33 /* CommentCell.swift */; };
+		978FDE66280E372A00AA8E33 /* InputBarAccessoryView in Frameworks */ = {isa = PBXBuildFile; productRef = 978FDE65280E372A00AA8E33 /* InputBarAccessoryView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,7 @@
 		9749D234280D1F3E007C9A9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9749D236280D24AA007C9A9D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		9749D238280D3420007C9A9D /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		978FDE62280E266700AA8E33 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,7 @@
 				9749D225280CFF1E007C9A9D /* FirebaseAuth in Frameworks */,
 				9749D229280CFF1E007C9A9D /* FirebaseStorage in Frameworks */,
 				9749D21E280CFA1E007C9A9D /* AlamofireImage in Frameworks */,
+				978FDE66280E372A00AA8E33 /* InputBarAccessoryView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,7 @@
 				9749D208280CF5CC007C9A9D /* AppDelegate.swift */,
 				9749D20A280CF5CC007C9A9D /* SceneDelegate.swift */,
 				9749D20E280CF5CC007C9A9D /* Main.storyboard */,
+				978FDE62280E266700AA8E33 /* CommentCell.swift */,
 				9749D238280D3420007C9A9D /* PostCell.swift */,
 				9749D236280D24AA007C9A9D /* CameraViewController.swift */,
 				9749D22A280D071A007C9A9D /* LoginViewController.swift */,
@@ -111,6 +116,7 @@
 				9749D224280CFF1E007C9A9D /* FirebaseAuth */,
 				9749D226280CFF1E007C9A9D /* FirebaseFirestore */,
 				9749D228280CFF1E007C9A9D /* FirebaseStorage */,
+				978FDE65280E372A00AA8E33 /* InputBarAccessoryView */,
 			);
 			productName = parsetagram;
 			productReference = 9749D205280CF5CC007C9A9D /* parsetagram.app */;
@@ -143,6 +149,7 @@
 			packageReferences = (
 				9749D21C280CFA1E007C9A9D /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 				9749D221280CFF1E007C9A9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				978FDE64280E372A00AA8E33 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */,
 			);
 			productRefGroup = 9749D206280CF5CC007C9A9D /* Products */;
 			projectDirPath = "";
@@ -178,6 +185,7 @@
 				9749D22D280D0727007C9A9D /* FeedViewController.swift in Sources */,
 				9749D20B280CF5CC007C9A9D /* SceneDelegate.swift in Sources */,
 				9749D239280D3420007C9A9D /* PostCell.swift in Sources */,
+				978FDE63280E266700AA8E33 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +421,14 @@
 				kind = branch;
 			};
 		};
+		978FDE64280E372A00AA8E33 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nathantannar4/InputBarAccessoryView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -440,6 +456,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9749D221280CFF1E007C9A9D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		978FDE65280E372A00AA8E33 /* InputBarAccessoryView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 978FDE64280E372A00AA8E33 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */;
+			productName = InputBarAccessoryView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
